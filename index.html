@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link href="./static/css/style.css" rel="stylesheet">
-        <script src="./static/js/script.js" defer></script>
-    </head>
-    <body>
-        <div class="left">
-            <div class="logo">
-                <img src="./static/img/logo.png" alt="Odin Logo">
-                ODIN
-            </div>
-            <footer>
-                Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
-            </footer>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up form</title>
+    <link href="./static/css/style.css" rel="stylesheet">
+    <script src="./static/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="./static/img/logo.png" alt="Odin Logo">
+            ODIN
         </div>
-        <div class="right">
-            right stuff 
+        <footer>
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        </footer>
+    </div>
+    <div class="right">
+        <div class="text">
+            <p>This is not a ral online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Signup <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
         </div>
-    </body>
+        <div class="form">
+            <h2>Let's do this!</h2>
+            <form>
+                <div class="row">
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="userMail">EMAIL</label>
+                        <input type="email" name="userMail" id="userMail" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required pattern="7\d{10}" placeholder="78005553535">
+                        <pre></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="password1">PASSWORD</label>
+                        <input type="password" name="password1" id="password1" required minlength="8">
+                        <pre></pre>
+                    </div>
+                    <div>
+                        <label for="password2">CONFIRM PASSWORD</label>
+                        <input type="password" name="password2" id="password2" required minlength="8">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button-field">
+            <button type="button">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+
 </html>
