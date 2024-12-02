@@ -97,15 +97,19 @@ a {
 }
 
 .form {
-    padding: 0 100px 0 40px;
-    }
+    padding: 12px 100px 0px 40px;
+    border: 1px solid var(--input-border-clr);
+    box-shadow: inset 0px 0px 8px 0px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 form {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
-
 }
 
 .row {
@@ -163,8 +167,4 @@ button {
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 12px;
-}
-
-input:required + span::after {
-    content: 'required';
 }
